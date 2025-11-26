@@ -5,12 +5,12 @@ document.querySelectorAll('.year').forEach(el => {
 
 //
 // Header
-fetch("/jc.a/h/header-jc.html")
+fetch("/joaocambez/jc.a/h/header-jc.html")
   .then(response => response.text())
   .then(data => {
     document.getElementById("header-jc").innerHTML = data;
 
     const script = document.createElement("script");
-    script.src = "/jc.a/h/script.js";
+    script.src = "/joaocambez/jc.a/h/script.js";
     document.body.appendChild(script);
   });
